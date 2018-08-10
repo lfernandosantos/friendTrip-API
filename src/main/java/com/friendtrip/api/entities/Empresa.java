@@ -20,19 +20,10 @@ public class Empresa implements Serializable {
 
 	
 	private Long id;
-	
-	@Column(name="razao_social", nullable=false)
 	private String razaoSocial;
-	
-	@Column(name="cnpj", nullable=false)
 	private String cnpj;
-	
-	@Column(name="data_criacao", nullable=false)
 	private Date dataCriacao;
-	
-	@Column(name="data_atualizacao", nullable=false)
 	private Date dataAtualizacao;
-	
 	
 	public Empresa() {
 		
@@ -48,6 +39,7 @@ public class Empresa implements Serializable {
 		this.id = id;
 	}
 
+	@Column(name="razao_social", nullable=false)
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
@@ -56,6 +48,7 @@ public class Empresa implements Serializable {
 		this.razaoSocial = razaoSocial;
 	}
 
+	@Column(name="cnpj", nullable=false)
 	public String getCnpj() {
 		return cnpj;
 	}
@@ -64,6 +57,7 @@ public class Empresa implements Serializable {
 		this.cnpj = cnpj;
 	}
 
+	@Column(name="data_criacao", nullable=false)
 	public Date getDataCriacao() {
 		return dataCriacao;
 	}
@@ -72,6 +66,7 @@ public class Empresa implements Serializable {
 		this.dataCriacao = dataCriacao;
 	}
 
+	@Column(name="data_atualizacao", nullable=false)
 	public Date getDataAtualizacao() {
 		return dataAtualizacao;
 	}
